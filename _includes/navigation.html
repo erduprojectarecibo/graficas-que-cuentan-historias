@@ -1,0 +1,57 @@
+<nav class="font-inter">
+    <div class="container mx-auto mt-2 px-4">
+        <div class="hidden lg:flex justify-between text-xs">
+            <div>
+                <span class="text-grey-dark mr-1 hover:text-grey-darker hover:text-color-transition">
+                    1-787-878-5475 | 787-878-5472
+                </span>
+                <a class="text-grey-dark hover:text-grey-darker hover:text-color-transition" href="mailto:webmaster@arecibo.inter.edu">
+                    webmaster@arecibo.inter.edu
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Blackboard</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Inter Web</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Correo Electrónico</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Solicita Admisión</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Readmisión</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between px-4 py-4 lg:py-6 flex-wrap">
+            <button class="flex text-grey block lg:hidden focus:outline-none">
+                <svg id="header-btn" class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+            <div class="flex-grow flex  justify-center lg:justify-start">
+                <a href="http://www.arecibo.inter.edu">
+                    <img src="http://www.arecibo.inter.edu/wp-content/uploads/2018/04/Arecibo-Logo.png" alt="Universidad Interamericana de Puerto Rico - Recinto de Arecibo"
+                        class="h-6 sm:h-8 lg:h-auto" />
+                </a>
+            </div>
+            <div id="menu" class="hidden lg:block w-full lg:w-auto pt-4 lg:pt-0 text-grey-darker">
+                <div class="flex flex-col lg:flex-row">
+                    {% for link in site.data.navigation.links %}
+                    <a href="{{link.path}}" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark {% if page.url == link.path %} font-bold{% endif %}">{{link.name
+                        | capitalize}}</a>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.getElementById('header-btn').addEventListener('click', () => {
+        var e = document.getElementById("menu");
+        var h = "hidden";
+        if (e.classList.contains(h)) {
+            e.classList.remove(h);
+        } else {
+            e.classList.add(h);
+        }
+    });
+</script>

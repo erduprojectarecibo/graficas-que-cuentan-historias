@@ -1,0 +1,11 @@
+---
+layout: default
+title: Archivo
+---
+
+{% for post in site.posts %}
+  {% if post.published == true %}
+  <a href="{{post.url}}" class="text-black no-underline font-medium text-xl"> {{ post.title }} <span class="text-grey-dark">{{ post.date | date: "%d/%m" }}</span></a>
+  <br>
+  {% endif %}
+{% endfor %}

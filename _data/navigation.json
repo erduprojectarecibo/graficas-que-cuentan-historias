@@ -1,0 +1,12 @@
+{
+    "links": [{
+        "name":"Inicio",
+        "path": "/"
+    }, {
+        "name":"Conócenos",
+        "path": "/about.html"
+    }, {
+        "name":"Archivo",
+        "path": "/archive.html"
+    }]
+}

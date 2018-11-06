@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>
+    Graficas que cuentan historias - La tasa de delitos tipo 1 por cada 100,000 habitantes
+</title>
+
+<!-- Tailwind CSS START -->
+<link href="/tailwind/css/tailwind.css" rel="stylesheet">
+<!-- Tailwind CSS END -->
+
+<!-- INTERAMERICANA START -->
+<link rel="icon" href="http://www.arecibo.inter.edu/wp-content/uploads/2018/03/cropped-ui-icon-150x150.png" sizes="32x32" />
+<link rel="icon" href="http://www.arecibo.inter.edu/wp-content/uploads/2018/03/cropped-ui-icon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.arecibo.inter.edu/wp-content/uploads/2018/03/cropped-ui-icon-300x300.png" />
+<meta name="msapplication-TileImage" content="http://www.arecibo.inter.edu/wp-content/uploads/2018/03/cropped-ui-icon-300x300.png" />
+<!-- INTERAMERICANA END -->
+
+<!-- Semantic UI START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/icon.min.css">
+<!-- Semantic UI END -->
+
+<!-- Google Fonts START -->
+<link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|PT+Serif" rel="stylesheet">
+<!-- Google Fonts END -->
+</head>
+
+<body>
+    <nav class="font-inter">
+    <div class="container mx-auto mt-2 px-4">
+        <div class="hidden lg:flex justify-between text-xs">
+            <div>
+                <span class="text-grey-dark mr-1 hover:text-grey-darker hover:text-color-transition">
+                    1-787-878-5475 | 787-878-5472
+                </span>
+                <a class="text-grey-dark hover:text-grey-darker hover:text-color-transition" href="mailto:webmaster@arecibo.inter.edu">
+                    webmaster@arecibo.inter.edu
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Blackboard</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Inter Web</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Correo Electrónico</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Solicita Admisión</a>
+                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Readmisión</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between px-4 py-4 lg:py-6 flex-wrap">
+            <button class="flex text-grey block lg:hidden focus:outline-none">
+                <svg id="header-btn" class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+            <div class="flex-grow flex  justify-center lg:justify-start">
+                <a href="http://www.arecibo.inter.edu">
+                    <img src="http://www.arecibo.inter.edu/wp-content/uploads/2018/04/Arecibo-Logo.png" alt="Universidad Interamericana de Puerto Rico - Recinto de Arecibo"
+                        class="h-6 sm:h-8 lg:h-auto" />
+                </a>
+            </div>
+            <div id="menu" class="hidden lg:block w-full lg:w-auto pt-4 lg:pt-0 text-grey-darker">
+                <div class="flex flex-col lg:flex-row">
+                    
+                    <a href="/" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark ">Inicio</a>
+                    
+                    <a href="/about.html" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark ">Conócenos</a>
+                    
+                    <a href="/archive.html" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark ">Archivo</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.getElementById('header-btn').addEventListener('click', () => {
+        var e = document.getElementById("menu");
+        var h = "hidden";
+        if (e.classList.contains(h)) {
+            e.classList.remove(h);
+        } else {
+            e.classList.add(h);
+        }
+    });
+</script>
+    
+    <header class="mb-5">
+  <div class="bg-inter-green text-white py-10">
+    <div class="container mx-auto px-4">
+      <h1 id="main-title" class="mb-1 font-inter" style="font-size: calc(40px + (50 - 40) * ((100vw - 768px) / (2560 - 1100)));">Gráficas que cuentan historias</h1>
+    </div>
+  </div>
+  
+</header>
+
+<style>
+  #main-title {
+    text-shadow: 0px 4px 3px #222;
+  }
+</style>
+
+    <main class="container mx-auto min-h-screen px-4 text-justify font-serif">
+        <!--<div class="chart h-hero-min md:h-hero lg:h-hero-max mb-10" id="chart3"></div>-->
+<div class="mt-5 text-left">
+  <h1>La Tasa de Delitos Tipo 1 por cada 100,000 Habitantes</h1>
+  <h5 class="text-grey-darker">Por Nicolás Ramos Gandía ─ Catedrático Asociado de Matemáticas, 20 Sep 2018 </h5>
+</div>
+
+<hr class="border block my-5">
+
+
+<div class="chart h-hero-min md:h-hero lg:h-hero-max" id="chart3"></div>
+
+<hr class="border block my-5">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://rawgit.com/larsac07/Motion-Highcharts-Plugin/master/motion.js"></script>
+<script src="https://erduprojectarecibo.github.io/resources/js/chartscript.js"></script>
+<p>Cuando se habla o se discute sobre el problema de la criminalidad en distintos contextos sociales, que pueden ir desde la conversación informal con los amigos en la cafetería hasta el aula de una universidad, tendemos exagerar su situación con las frases <em>“las cosas están muy malas”</em> o <em>“yo percibo un incremento en la criminalidad”</em>. Esas frases connotan que formamos una opinión basada en elementos anecdóticos o percepciones y no en datos contextualizados a través del tiempo.</p>
+
+<p><br /></p>
+
+<p>Es más, cuando hacemos comparaciones solamente consideramos el año vigente con el año previo para calcular el cambio ocurrido, esto es, la diferencia de un año al otro a la fecha correspondiente. Ese acercamiento es un enfoque de visión micro la visón macro es dada por la serie de tiempo del fenómeno. Además, tendemos a acercarnos a la criminalidad parcialmente enfocándonos en el número de asesinatos y si alguien nos cuestiona indicando que incluso los datos muestran una disminución en éstos, inmediatamente reaccionamos no con razones y sí con racionalizaciones aderezadas con el comentario trillado de que los datos han sido manipulados para favorecer al gobierno.</p>
+
+<p><br /></p>
+
+<p>Por eso, si hablamos de la criminalidad sin recurrir a los datos históricos y sin analizar cómo éstos han cambiado en su comportamiento anual estaremos opinando a ciegas y por percepciones.</p>
+
+<p><br /></p>
+
+<p>Examinemos, pues, la criminalidad cronológicamente y de una forma más amplia utilizando los datos de los delitos Tipo 1 (que no es una métrica exhaustiva, pero es un estándar de comparación).  Esos delitos se dividen en dos categorías principales: los delitos contra la persona y los delitos contra la propiedad.  Los delitos de violencia contra la persona son: asesinatos y homicidios, violaciones por la fuerza, robos y agresiones agravadas.  Los delitos contra la propiedad son: escalamientos, apropiaciones ilegales y hurto de auto.  Esas categorías nos proveen una perspectiva más amplia de la criminalidad.  Además, el total de delitos Tipo 1 se proporcionará a base de la población estimada del País en cada año, esto es, la tasa anual de delitos Tipo 1 por cada 100,000 habitantes en Puerto Rico desde el 1960 al 2017.</p>
+
+<p><br /></p>
+
+<p>La gráfica nos cuenta que en el año 1960 se registró una tasa de 1,416 los delitos Tipo 1 por cada 100,000 habitantes (con un total de 33,272 delitos) de ahí en adelante la tasa fue incrementando hasta alcanzar su pico en el año 1992 con 3,605 delitos Tipo 1 por cada 100,000 habitantes (con un total de 128,874 delitos).  En ese periodo de 33 años el total de delitos prácticamente se cuadriplicó.  Entonces, luego de ese año, la tasa de delitos fue disminuyendo hasta alcanzar su punto más bajo en el 2017 con 1,167 delitos Tipo 1 por cada 100,000 habitantes (con un total de 38,939 delitos).  Desde el punto de vista global el comportamiento de esa tasa de criminalidad se asemeja a escalar una montaña en la que uno subirá hasta alcanzar el pico y luego bajará por el otro extremo hasta llegar a lo que equivaldría a una <em>planicie</em>, un punto menor o igual al que empezó a escalar.</p>
+
+<p><br /></p>
+
+<p>De forma más específica, presentamos dos gráficas que ilustran, de forma segmentada, el comportamiento de la <em>Tasa Delitos Tipo 1 por cada 100,000 habitantes.</em>  En la primera gráfica vemos la trayectoria ascendente que ocurrió en el periodo que va desde el 1960 hasta el 1992.  En la segunda gráfica vemos la trayectoria descendente que sucedió desde el 1992 hasta el 2017.  Es claro, como se observa en la gráfica principal, que el año 1992 es el punto de inflexión de la gráfica, esto es, donde cambia el comportamiento de la curva de ascendente a descendente.</p>
+
+<p><br /></p>
+
+<figure class="text-center">
+    <img src="/assets/images/2018-09-20-charts.png" />
+    <figcaption class="text-grey-darker -mt-4">
+        Análisis gráfico segmentado de la <em>Tasa Delitos Tipo 1 por cada 100,000 habitantes</em>, Puerto Rico.
+    </figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>Entre el año 1960 y el 1992 la tasa de Delitos Tipo 1 aumentó de 1,416 a 3,606 por cada 100,000 habitantes, esto es, un incremento en la tasa de 2,189 delitos y ascendió a una razón de cambio de 66 delitos por año.  Entre el año 1992 y el 2017 la tasa de Delitos Tipo 1 disminuyó de 3,606 a 1,167 por cada 100,000 habitantes, esto es, una reducción en la tasa de 2,438 delitos y descendió a razón de cambio de 94 delitos por año.</p>
+
+<p><br /></p>
+
+<p>Podemos afirmar, al comparar los datos en esos dos segmentos temporales, que la disminución en la tasa de Delitos Tipo 1 por cada 100,000 habitantes fue mayor que el incremento en la misma.</p>
+
+<p><br /></p>
+
+<p>En números absolutos, el total de Delitos Tipo 1 aumentó en 95,602 delitos entre el 1960 y el 1992, mientras que desde ese año en adelante hasta el 2017 el total de delitos disminuyó en 89,935 delitos.</p>
+
+<p><br /></p>
+
+<p>Entonces, ¿por qué ese desfase entre nuestra creencia (incluso de abogados y analistas de la radio) y los datos reportados?  Pues, como afirma Hans Rosling en su libro Factfulness, porque por siglos hemos internalizado la negatividad basada en que las cosas están peor que antes.  Asimismo, tendemos a romantizar el pasado con frases que se repiten hasta el empalago como: <em>“todo tiempo pasado fue mejor”</em>, aunque los datos digan todo lo contrario.  Y súmele el énfasis en la noticia negativa que nos recibe cada mañana cuando estamos saboreando un café.  Así que, tengamos en cuenta lo que expresó la analista de política de CNN Gloria Borger: <em>“For most folks, no news is good news; for the press, good news is not news”.</em></p>
+
+<p><br /></p>
+
+<p>Por lo cual, no es tomar con ingenuidad los que otros opinen, es ir a los datos y dejar que ellos revelen la realidad.</p>
+
+<p><br /></p>
+
+<!-- ### Fuentes: -->
+
+
+    </main>
+    
+    <footer class="bg-footer-grey-darker text-footer-grey-light px-4 font-inter mt-5">
+  <div class="container flex flex-col lg:flex-row mx-auto py-10">
+    <div class="mr-3">
+      <div class="flex flex-col lg:flex-row">
+        <div class="mr-3 w-full lg:w-1/2 mb-12">
+          <h3 class="uppercase tracking-wide font-thin border-footer-grey border-b pb-3 mb-6">
+            Dirección Física
+          </h3>
+          <p>
+            <i class="huge map marker alternate icon float-left text-footer-grey"></i>
+            Carretera #2, Km. 80.4,
+            <br />
+            Barrio San Daniel,
+            <br />
+            Sector Las Canelas, Arecibo
+            <br />
+          </p>
+          <br />
+          <div>
+            <a class="text-footer-grey-dark hover:text-footer-grey-light" href="http://maps.google.com/maps/ms?ie=UTF8&amp;msa=0&amp;msid=109550270533398091930.00044bee5a490f47fdd65&amp;ll=18.47852,-66.767529&amp;spn=0.01504,0.023866&amp;source=embed"
+              target="_blank" rel="noopener">
+              Mapa en Google
+            </a>
+            |
+            <a class="text-footer-grey-dark hover:text-footer-grey-light" href="https://www.google.com/maps/place/18%C2%B028'26.5%22N+66%C2%B045'33.2%22W/@18.4694494,-66.759796,851a,35y,39.2t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d18.474028!4d-66.759222"
+              target="_blank" rel="noopener">
+              18.474028, -66.759222
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 mb-12">
+          <h3 class="uppercase tracking-wide font-thin border-footer-grey border-b pb-3 mb-6">teléfonos</h3>
+          <p>
+            <i class="huge phone icon float-left text-footer-grey"></i>
+            Cuadro: 1-(787)-878-5475 | 878-5472
+            <br />
+            Gerencia de Matrícula: Ext. 3250
+            <br />
+            Admisiones: 1-(787)-878-5195
+            <br />
+            Fax: 1-(787)-880-1624
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row">
+        <div class="mr-3 w-full lg:w-1/2 mb-12">
+          <h3 class="uppercase tracking-wide font-thin border-footer-grey border-b pb-3 mb-6">
+            Dirección postal
+          </h3>
+          <p>
+            <i class="huge envelope icon float-left text-footer-grey"></i>
+            PO Box 4050, Arecibo
+            <br />
+            Puerto Rico 00614-4050
+          </p>
+        </div>
+        <div class="w-full lg:w-1/2 mb-12">
+          <h3 class="uppercase tracking-wide font-thin border-footer-grey border-b pb-3 mb-6">Encuéntranos</h3>
+          <div>
+            <a href="https://www.facebook.com/pg/ARECIBOINTER/posts/" class="text-footer-grey no-underline hover:text-blue-dark">
+              <i class="big facebook icon"></i>
+            </a>
+            <a href="https://twitter.com/interarecibo60" class="text-footer-grey no-underline hover:text-blue-light">
+              <i class="big twitter square icon"></i>
+            </a>
+            <a href="https://www.instagram.com/interarecibo/" class="text-footer-grey no-underline hover:text-purple-dark">
+              <i class="big instagram icon"></i>
+            </a>
+            <a href="https://www.flickr.com/photos/interarecibo/" class="text-footer-grey no-underline hover:text-pink-dark">
+              <i class="big flickr icon"></i>
+            </a>
+            <a href="https://www.youtube.com/user/ARECIBOINTERTV" class="text-footer-grey no-underline hover:text-red-dark">
+              <i class="big youtube icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <h3 class="uppercase tracking-wide font-thin border-footer-grey border-b pb-3 mb-6">
+        ACREDITACIONES Y CONSORCIOS
+      </h3>
+      <div class="black-white-transition">
+        <img src="http://www.arecibo.inter.edu/wp-content/uploads/2018/02/accreditations.png" usemap="#accreditations"
+          width="338" height="240" name="accreditations0" border="0" alt="">
+
+        <map name="accreditations">
+          <area coords="0,0,113,59" shape="rect" href="https://www.msche.org/institution/0009/" target="_blank" alt="MSCHE">
+          <area coords="114,0,227,59" shape="rect" href="https://www.coacrna.org/Pages/default.aspx" target="_blank"
+            alt="COA">
+          <area coords="228,0,338,59" shape="rect" href="http://www.acenursing.org/" target="_blank" alt="ACEN">
+          <area coords="0,61,113,120" shape="rect" href="http://www.cswe.org/" target="_blank" alt="CSWE">
+          <area coords="114,61,227,120" shape="rect" href="http://www.caepnet.org/" target="_blank" alt="CAEP">
+          <area coords="228,61,338,120" shape="rect" href="http://www.iacet.org/" target="_blank" alt="IACET">
+          <area coords="0,121,113,180" shape="rect" href="http://www.acenet.edu/news-room/Pages/ACE-Internationalization-Laboratory.aspx"
+            target="_blank" alt="ACE">
+          <area coords="114,121,227,180" shape="rect" href="https://www.ehu.eus/es/web/nazioarteko-harremanak/2017-international-credit-mobility-project"
+            target="_blank" alt="UPV">
+          <area coords="228,121,338,180" shape="rect" href="http://www.universia.pr/" target="_blank" alt="UNIVERSIA">
+          <area coords="114,182,227,240" shape="rect" href="http://www.hets.org/" target="_blank" alt="HETS">
+          <area coords="0,182,113,239" shape="rect" href="http://www.hacu.net/" target="_blank" alt="HACU">
+          <area coords="228,182,338,240" shape="rect" href="http://hets.org/virtualplaza/" target="_blank" alt="HETS VP">
+        </map>
+      </div>
+    </div>
+  </div>
+  <hr class="border-b border-footer-grey">
+  <div class="container flex mx-auto pt-10 flex-wrap">
+    <div class="flex flex-wrap mx-auto">
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="http://www.arecibo.inter.edu/mapa-del-recinto/">
+          Mapa del Recinto
+        </a> &nbsp;|&nbsp;
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="https://portal.office.com/">
+          Correo Electrónico
+        </a> &nbsp;|&nbsp;
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="http://www.arecibo.inter.edu/directorio-telefonico/">
+          Directorio Telefónico
+        </a> &nbsp;|&nbsp;
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="http://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/directorio_telefonico_arecibo.pdf">
+          Directorio Telefónico (pdf)
+        </a> &nbsp;|&nbsp;
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="http://www.inter.edu">
+          Oficina Central del Sistema
+        </a> &nbsp;|&nbsp;
+        <a class="text-footer-grey-dark text-sm no-underline hover:text-white hover:underline" href="http://interespr.com/">
+          Revista INTERes
+        </a>
+    </div>
+    <p class="container mx-auto text-footer-grey-dark py-4 text-xs text-justify">
+      © 2018 | La Universidad Interamericana de Puerto Rico posee Licencia de Renovación del Consejo de Educación
+      de Puerto Rico (CEPR) y todos los programas académicos, incluyendo los programas online, están autorizados
+      por dicha agencia. La Universidad Interamericana está acreditada por la Middle States Commission on Higher
+      Education (MSCHE), 3624 Market Street, Philadelphia, PA 19104 (267-284-5000). La MSCHE es una agencia de
+      acreditación institucional reconocida por el Secretario de Educación de los Estados Unidos de Norteamérica
+      y por el Council on Higher Education Accreditation (CHEA).
+    </p>
+</footer>
+</body>
+
+</html>

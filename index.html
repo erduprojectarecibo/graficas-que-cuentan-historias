@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+{% if post.published == true %}
+<article class="px-4 font-sans">
+    <div id="news" class="hero black-white-transition h-hero-min md:h-hero lg:h-hero-max" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{post.hero}}');">
+        <h2 class="hvr-btm text-xl md:text-2xl lg:text-3xl mb-1">
+            <a href="{{post.url}}">{{post.title}}</a>
+        </h2>
+        <p>{{post.date | date: "%d/%m/%Y" }}</p>
+    </div>
+    <div class="description font-sans">
+        <p>
+            {{post.excerpt}}
+        </p>
+    </div>
+    <div class="text-lg float-right text-red-darkest font-bold">
+        <a href="{{post.url}}" class="black-hvr-btm">Read more</a>
+    </div>
+</article>
+{% endif %}
+{% endfor %}
