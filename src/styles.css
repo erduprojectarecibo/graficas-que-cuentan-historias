@@ -1,5 +1,4 @@
 @tailwind preflight;
-@tailwind components;
 
 .hover\:text-color-transition:hover {
   transition: color 0.5s;
@@ -20,6 +19,12 @@ article a {
   color: inherit;
   @apply no-underline;
 }
+
+@tailwind components;
+
+
+
+@tailwind utilities;
 
 .hvr-btm {
   display: inline-block;
@@ -70,5 +75,3 @@ article a {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
-@tailwind utilities;

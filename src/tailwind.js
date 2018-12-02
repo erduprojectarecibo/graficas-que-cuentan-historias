@@ -180,7 +180,7 @@ module.exports = {
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
-    'xl': '1200px',
+    'xl': '1000px',
   },
 
 
@@ -204,7 +204,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      '\'PT Sans\'',
+      'Lato',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -239,9 +239,6 @@ module.exports = {
       'Courier New',
       'monospace',
     ],
-    'inter': [
-      'Lato'
-    ]
   },
 
 
