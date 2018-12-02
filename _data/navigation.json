@@ -4,9 +4,9 @@
         "path": "/"
     }, {
         "name":"Conócenos",
-        "path": "/about.html"
+        "path": "/about/"
     }, {
         "name":"Archivo",
-        "path": "/archive.html"
+        "path": "/archivo/"
     }]
 }
