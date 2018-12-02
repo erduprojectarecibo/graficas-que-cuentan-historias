@@ -35,7 +35,7 @@
             <div id="menu" class="hidden lg:block w-full lg:w-auto pt-4 lg:pt-0 text-grey-darker">
                 <div class="flex flex-col lg:flex-row">
                     {% for link in site.data.navigation.links %}
-                    <a href="{{link.path}}" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark {% if page.url == link.path %} font-bold{% endif %}">{{link.name
+                    <a href="{{site.baseurl}}/{{link.path}}" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark {% if page.url == link.path %} font-bold{% endif %}">{{link.name
                         | capitalize}}</a>
                     {%endfor%}
                 </div>
