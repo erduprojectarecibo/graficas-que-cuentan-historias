@@ -6,7 +6,7 @@ chart: chart4
 hero: assets/images/2018-08-27-APADC.jpg
 title: "Puntuación Promedio Prueba de Razonamiento Matemático Escuela Privada y Pública "
 published: true
-excerpt: La Prueba de Evaluación y Admisión Universitaria (PEAU) administrada por el College Board de Puerto Rico es la única medida estandarizada en el país que se puede utilizar para comparar el desempeño académico de los estudiantes de grado doce de la escuela pública con los de la privada.
+excerpt: La puntuación promedio en la Prueba de Evaluación y Admisión Universitaria (PEAU) administrada por el College Board de Puerto Rico es la única medida estandarizada en el país que se puede utilizar para comparar el desempeño académico de los estudiantes de grado doce de la escuela pública con los de la escuela privada.
 ---
 
 La puntuación promedio en la Prueba de Evaluación y Admisión Universitaria (PEAU) administrada por el College Board de Puerto Rico es la única medida estandarizada en el país que se puede utilizar para comparar el desempeño académico de los estudiantes de grado doce de la escuela pública con los de la escuela privada.  Las puntuaciones en las dos pruebas de razonamiento y la prueba de aprovechamiento en inglés son medidas imprescindibles en el cálculo del índice de admisión a la universidad y a los programas académicos.  También, las puntuaciones en las pruebas de aprovechamiento se utilizan para la ubicación de los estudiantes en los diferentes niveles de los cursos del primer año en español, inglés y matemáticas y establecen distinción entre los estudiantes admitidos a la universidad.  
