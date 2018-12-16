@@ -12,9 +12,9 @@
     "tailwindcss": "^0.7.0"
   },
   "scripts": {
-    "jk-prod": "jekyll serve",
-    "jk-dev": "jekyll server --drafts",
-    "tw-dev": "npx gulp",
-    "tw-prod": "npx gulp build"
+    "public": "jekyll serve",
+    "experimental": "jekyll server --drafts",
+    "watch": "npx gulp",
+    "bundle": "npx gulp build"
   }
 }
