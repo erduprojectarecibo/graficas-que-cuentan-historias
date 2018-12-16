@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archivo
+---
+
+<h2 class="mb-2">Published Articles</h2>
+{% for post in site.posts %}
+  {% if post.published%}
+    <a href="{{site.baseurl}}{{post.url}}" class="text-black no-underline font-medium text-xl"> {{ post.title }} <span class="text-grey-dark">{{ post.date | date: "%d/%m" }}</span></a>
+    <br>
+  {%endif%}
+{% endfor %}
+
+{% if site.show_drafts %}
+  <h2 class="my-2">Unpublished Articles</h2>
+  {% for post in site.posts %}
+    {% unless post.published%}
+      <a href="{{site.baseurl}}{{post.url}}" class="text-black no-underline font-medium text-xl"> {{ post.title }} <span class="text-grey-dark">{{ post.date | date: "%d/%m" }}</span></a>
+      <br>
+    {%endunless%}
+  {% endfor %}
+{% endif%}
+

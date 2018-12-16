@@ -10,11 +10,11 @@
                 </a>
             </div>
             <div>
-                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Blackboard</a>
-                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Inter Web</a>
-                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Correo Electrónico</a>
-                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Solicita Admisión</a>
-                <a href="#" class="text-white no-underline bg-inter-green py-2 px-3">Readmisión</a>
+                <a href="http://www.arecibo.inter.edu/blackboard/" class="text-white no-underline bg-inter-green py-2 px-3">Blackboard</a>
+                <a href="https://ssb.ec.inter.edu/ssomanager/c/SSB" class="text-white no-underline bg-inter-green py-2 px-3">Inter Web</a>
+                <a href="https://portal.office.com/" class="text-white no-underline bg-inter-green py-2 px-3">Correo Electrónico</a>
+                <a href="http://www.inter.edu/admisiones-2/" class="text-white no-underline bg-inter-green py-2 px-3">Solicita Admisión</a>
+                <a href="https://ssb.ec.inter.edu/PROD/bwskalog.p_disploginnew" class="text-white no-underline bg-inter-green py-2 px-3">Readmisión</a>
             </div>
         </div>
     </div>
@@ -28,14 +28,14 @@
             </button>
             <div class="flex-grow flex  justify-center lg:justify-start">
                 <a href="http://www.arecibo.inter.edu">
-                    <img src="http://www.arecibo.inter.edu/wp-content/uploads/2018/04/Arecibo-Logo.png" alt="Universidad Interamericana de Puerto Rico - Recinto de Arecibo"
+                    <img src="{{ site.baseurl }}/assets/images/Arecibo-Logo.png" alt="Universidad Interamericana de Puerto Rico - Recinto de Arecibo"
                         class="h-6 sm:h-8 lg:h-auto" />
                 </a>
             </div>
             <div id="menu" class="hidden lg:block w-full lg:w-auto pt-4 lg:pt-0 text-grey-darker">
                 <div class="flex flex-col lg:flex-row">
                     {% for link in site.data.navigation.links %}
-                    <a href="{{link.path}}" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark {% if page.url == link.path %} font-bold{% endif %}">{{link.name
+                    <a href="{{site.baseurl}}{{link.path}}" class="no-underline hover:no-underline text-grey-darker border-grey-light border-t lg:border-none py-4 lg:px-4 lg:py-0 hover:text-green-dark {% if page.url == link.path %} font-bold{% endif %}">{{link.name
                         | capitalize}}</a>
                     {%endfor%}
                 </div>
