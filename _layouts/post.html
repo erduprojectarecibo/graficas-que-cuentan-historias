@@ -12,14 +12,15 @@ layout: default
 
 {% if page.chart %}
 <div class="chart h-hero-min md:h-hero lg:h-hero-max" id="{{page.chart}}"></div>
-
 <hr class="border block my-5">
+{% endif %}
+
 <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script defer src="https://code.highcharts.com/highcharts.js"></script>
 <script defer src="https://code.highcharts.com/modules/exporting.js"></script>
 <script defer src="https://rawgit.com/larsac07/Motion-Highcharts-Plugin/master/motion.js"></script>
 <script defer src="https://erduprojectarecibo.github.io/resources/js/chartscript.js"></script>
-{% endif %}
+
 <div class="font-serif">
   {{content}}
 </div>
